@@ -16,25 +16,13 @@
                     <li><button class="btn btn-success btn-sm" ng-click="upvote(note)">Upvote</button></li>
                     <li><button class="btn btn-danger btn-sm" ng-click="downvote(note)">Downvote</button></li>
                 </ul>
-                <ul class="resultsDiv">
-                    <li>{{note.time}}</li>
-                </ul>
-                <ul class="resultsDiv">
-                    <li>{{note.phonenumber}}, </li>
-                    <li>{{note.focus}}-focused</li>
-                </ul>
+                <hr>
                 <ul class="resultsDiv">
                     <li>{{note.deals}}</li>
                 </ul>
+                <hr>
                 <ul class="resultsDiv">
-                    <li><button class="btn btn-warning btn-sm" ng-click="reportFalse(note)">Report false info</button></li>
-                </ul>
-                <ul class="resultsDiv">
-                    <li>{{note.address}}</li>
-                    <li>{{note.city}}, {{note.zipcode}}</li>
-                </ul>
-                <ul class="resultsDiv">
-                    <li>Added on: {{note.date}}</li>
+                    <li>{{note.city}}</li>
                 </ul>
             </div>
         </div>

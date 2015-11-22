@@ -17,7 +17,7 @@ router.put("/incUser/:id", function(req, res, next){
     res.send("user activity +1'd!");
 });
 
-router.post("/happyhour/:zipcode", function(req, res, next){
+router.post("/happyhour/:city", function(req, res, next){
     return Establishment.find({city: req.params.city}).exec(function(err, info){
         if (err) throw new Error(err);
         res.send(JSON.stringify(info));

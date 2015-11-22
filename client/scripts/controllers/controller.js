@@ -80,9 +80,9 @@ myApp.controller("EstablishmentController", ['$scope', '$http', '$location', '$r
         //    console.log(result);
         //    $location.path("results");        //mirrors the promise(.then) in the Est.Service below
         //});
-        EstablishmentService.getHappyHours($scope.zipcode);
+        EstablishmentService.getHappyHours($scope.city);
         console.log(EstablishmentService.data.establishments);
-        console.log('getEstablishments zipcode ' + $scope.zipcode);
+        console.log('getEstablishments city ' + $scope.city);
     };
     $scope.reportFalse = function(note){        //PUT for flagging false HH info
         $http({ url: '/flag/' + note._id,
