@@ -67,8 +67,9 @@ app.use('/', index);
 
 var mongoose = require('mongoose');
 
-var mongoURI = "mongodb://localhost:27017/fatty_logue";
-//var mongoURI = "mongodb://paulstafki:kRGd2Ssw@ds035583.mongolab.com:35583/hose_head";
+//var mongoURI = "mongodb://localhost:27017/fatty_logue";
+var mongoURI = "mongodb://paulstafki:kRGd2Ssw@ds057234.mongolab.com:57234/fattylogue";
+
 
 var MongoDB = mongoose.connect(mongoURI).connection;
 
