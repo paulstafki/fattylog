@@ -1,0 +1,42 @@
+<div>
+    <div class="well">
+        <h2><img src="/assets/views/images/Hosehead-2.png" alt="Hosehead" height="38" width="50">RESULTS:</h2>
+    </div>
+    <div class="container">
+        <div class="resultDiv" ng-repeat="note in establishments">
+            <div ng-click="showDetails = ! showDetails">
+                <ul class="resultsHeader">
+                    <li class="left">{{note.name}}, </li>
+                    <li><img src="../images/thumbsup.jpg" alt="Thumbs Up" height="16" width="16"> x {{note.upvotes}}</li>
+                    <li><img src="../images/thumbsdown.jpg" alt="Thumbs Down" height="16" width="16"> x {{note.downvotes}}</li>
+                </ul>
+            </div>
+            <div class="col-xs-9 col-sm-6 col-centered expandyDiv" ng-show="showDetails">
+                <ul class="resultsDiv">
+                    <li><button class="btn btn-success btn-sm" ng-click="upvote(note)">Upvote</button></li>
+                    <li><button class="btn btn-danger btn-sm" ng-click="downvote(note)">Downvote</button></li>
+                </ul>
+                <ul class="resultsDiv">
+                    <li>{{note.time}}</li>
+                </ul>
+                <ul class="resultsDiv">
+                    <li>{{note.phonenumber}}, </li>
+                    <li>{{note.focus}}-focused</li>
+                </ul>
+                <ul class="resultsDiv">
+                    <li>{{note.deals}}</li>
+                </ul>
+                <ul class="resultsDiv">
+                    <li><button class="btn btn-warning btn-sm" ng-click="reportFalse(note)">Report false info</button></li>
+                </ul>
+                <ul class="resultsDiv">
+                    <li>{{note.address}}</li>
+                    <li>{{note.city}}, {{note.zipcode}}</li>
+                </ul>
+                <ul class="resultsDiv">
+                    <li>Added on: {{note.date}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

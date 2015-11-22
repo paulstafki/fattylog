@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Homepage</title>
+    <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Slackey|Ubuntu' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header>
+    <div class="topNav" ng-controller="UserController">
+        <ul class="navBar">
+            <li><a href="#search">SEARCH</a></li>
+            <li><a href="#addhh">ADD</a></li>
+            <li><a href="#results">RESULTS</a></li>
+        </ul>
+        <div class="userBar">
+            <p>Welcome: {{currentUser.username}}, Rank: {{currentUser.rank}}</p>
+        </div>
+    </div>
+    <hr>
+</header>
+<div class="moduleDiv">
+    <main ng-view></main>
+</div>
+<footer>
+    <hr>
+    <div>
+        <ul class="footerNav">
+            <li><a href="https://www.linkedin.com/pub/paul-r-stafki/b8/54a/207">Linkedin</a></li>
+        </ul>
+    </div>
+</footer>
+<script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+<script type="text/javascript" src="/vendors/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/controllers/controller.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    background-color: #333333;
+}
+
+h1, h2 {
+    font-family: Slackey, Verdana, sans-serif;
+}
+
+h3, h4, h5, label, li, p, a, button {
+    font-family: Ubuntu, Verdana, sans-serif;
+    color: #DBDBDB;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    color: #f2836b;
+}
+
+.resultsDiv li, .resultsHeader li, .navBar li, .userBar li {
+    display: inline;
+}
+
+.resultsHeader li {
+    font-weight: bold;
+    font-size:20px;
+}
+
+.resultsHeader, .resultsDiv {
+    padding-left: 0px;
+}
+
+.topNav {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.moduleDiv {
+    text-align: center;
+}
+
+.navBar {
+    margin-right: 20px;
+}
+
+.navBar li {
+    padding-left: 20px;
+}
+
+.resultsDiv {
+    text-align: left;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.userBar {
+    text-align: left;
+}
+
+.well {
+    background-color: #a9d1cc;
+}
+
+.expandyDiv {
+    border-color: #DBDBDB;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #4f4f4f;
+    padding-top: 14px;
+    margin-bottom: 5px;
+}
+
+.topNav li, .topNav a, .footerNav li, .footerNav a {
+    color: #b7e2dd;
+}
+
+.searchy a {
+    color: #b7e2dd;
+}
+
+.userBar {
+    padding-left: 40px;
+}
+
+.userBar p {
+    color: #DBDBDB;
+}
+
+h1 {
+    font-size: 52px;
+    color: #a9d1cc;
+}
+
+h3 {
+    color: #000000;
+}
+
+.radioFocus {
+    text-align: left;
+}
+
+.radioFocus p {
+    color: #DBDBDB;
+}
+
+.logoDiv {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
