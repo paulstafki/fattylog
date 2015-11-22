@@ -16,7 +16,7 @@ li {
 }
 
 p {
-    color: #f2836b;
+    color: #ff8f5b;
 }
 
 .resultsDiv li, .resultsHeader li, .navBar li, .userBar li {
@@ -63,7 +63,7 @@ p {
 }
 
 .well {
-    background-color: #a9d1cc;
+    background-color: #ff8f5b;
 }
 
 .expandyDiv {
@@ -76,11 +76,11 @@ p {
 }
 
 .topNav li, .topNav a, .footerNav li, .footerNav a {
-    color: #b7e2dd;
+    color: #ff8f5b;
 }
 
 .searchy a {
-    color: #b7e2dd;
+    color: #ff8f5b;
 }
 
 .userBar {
@@ -93,7 +93,7 @@ p {
 
 h1 {
     font-size: 52px;
-    color: #a9d1cc;
+    color: #ff8f5b;
 }
 
 h3 {
@@ -111,4 +111,9 @@ h3 {
 .logoDiv {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.pamagain {
+    background-color: #ff8f5b;
+    color: #000000 !important;
 }

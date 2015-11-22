@@ -2,7 +2,7 @@
 <html ng-app="myApp">
 <head lang="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hosehead</title>
+    <title>Fattylog</title>
     <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
     <script type="text/javascript" src="/vendors/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
@@ -14,7 +14,8 @@
 <body>
 <div class="moduleDiv">
     <div class="logoDiv">
-        <img src="/assets/views/images/Hosehead_Logo.png" alt="Hosehead" height="230" width="230">
+        <img src="/assets/views/images/pamfat.jpg" alt="Hosehead" height="230" width="auto">
+        <h1>Fattylog</h1>
     </div>
     <div class="loginForm">
         <form action="/" method="post" class="form-horizontal" role="form" name="loginform">
@@ -22,7 +23,7 @@
                 <label class="control-label col-sm-2" for="username">Username:</label>
                 <div class="col-sm-offset+1 col-sm-9">
                     <input ng-model="username" type="text" name="username" id="username" class="form-control input-lg" ng-minlength="2" ng-maxlength="25" placeholder="Username:" required/>
-                    <div class="col-sm-10">
+                    <div class="col-sm-10" style="padding-left: 70px;">
                         <p ng-show="loginform.username.$error.minlength">Username is too short</p>
                         <p ng-show="loginform.username.$error.maxlength">Username is too long</p>
                         <p ng-show="loginform.username.$error.required">Username is required</p>
@@ -33,7 +34,7 @@
                 <label class="control-label col-sm-2" for="password">Password:</label>
                 <div class="col-sm-offset+1 col-sm-9">
                     <input ng-model="password" type="password" name="password" id="password" class="form-control input-lg" ng-minlength="4" ng-maxlength="14" placeholder="Password:" required/>
-                    <div class="col-sm-10">
+                    <div class="col-sm-10" style="padding-left: 70px;">
                         <p ng-show="loginform.password.$error.minlength">Password is too short</p>
                         <p ng-show="loginform.password.$error.maxlength">Password is too long</p>
                         <p ng-show="loginform.password.$error.required">Password is required</p>
@@ -47,6 +48,7 @@
                 </div>
             </div>
         </form>
+        <a href="/assets/views/routes/landing.html" style="width: 140px;" class="btn btn-default" role="button">Or don't</a>
     </div>
 </div>
 </body>

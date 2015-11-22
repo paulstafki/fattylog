@@ -14,15 +14,15 @@
 <body>
 <div class="moduleDiv">
     <div class="well">
-        <h2>MAKE AN ACCOUNT:</h2>
-        <h3>Free and Easy!</h3>
+        <h2>MAKE AN NAME:</h2>
+        <h3>Or don't, whatevs.</h3>
     </div>
     <form action="/register" method="post" class="form-horizontal" role="form" name="registerform">
         <div class="form-group">
             <label class="control-label col-sm-2" for="username">Username:</label>
             <div class="col-sm-offset+1 col-sm-9">
                 <input ng-model="username" type="text" name="username" id="username" ng-minlength="2" ng-maxlength="25" class="form-control input-lg" placeholder="Username:" required/>
-                <div class="col-sm-10">
+                <div class="col-sm-10" style="padding-left: 70px;">
                     <p ng-show="registerform.username.$error.minlength">Username is too short</p>
                     <p ng-show="registerform.username.$error.maxlength">Username is too long</p>
                     <p ng-show="registerform.username.$error.required">Username is required</p>
@@ -33,7 +33,7 @@
             <label class="control-label col-sm-2" for="password">Password:</label>
             <div class="col-sm-offset+1 col-sm-9">
                 <input ng-model="password" type="password" name="password" id="password" ng-minlength="4" ng-maxlength="14" class="form-control input-lg" placeholder="Password:" required/>
-                <div class="col-sm-10">
+                <div class="col-sm-10" style="padding-left: 70px;">
                     <p ng-show="registerform.password.$error.minlength">Password is too short</p>
                     <p ng-show="registerform.password.$error.maxlength">Password is too long</p>
                     <p ng-show="registerform.password.$error.required">Password is required</p>
